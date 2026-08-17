@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Talha Laique — Machine Learning &amp; Computer Vision Engineer</title>
+<meta name="description" content="Talha Laique — Machine Learning / Computer Vision Engineer in Ås, Norway. 5+ years building and deploying detection, segmentation and document-AI systems end to end." />
+<meta name="author" content="Talha Laique" />
+<link rel="canonical" href="https://laiquet.github.io/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Talha Laique — Machine Learning &amp; Computer Vision Engineer" />
+<meta property="og:description" content="5+ years building and deploying computer vision, classification and document-AI systems end to end." />
+<meta property="og:image" content="assets/talha.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d9488'/%3E%3Ctext x='50' y='50' font-family='Segoe UI,Helvetica,Arial' font-size='46' font-weight='700' fill='%23ffffff' text-anchor='middle' dominant-baseline='central'%3ETL%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+
+<script>
+// Set the theme before first paint so there is no flash of the wrong palette.
+(function () {
+  try {
+    var saved = localStorage.getItem('tl-theme');
+    var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (prefersLight ? 'light' : 'dark'));
+  } catch (e) { /* keep the dark default */ }
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark">TL</span>
+      <span class="brand__text">Talha Laique</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle colour theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a7 7 0 0 0 11.1 11.1Z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="dot"></span>Ås, Norway · Open to ML / CV roles</p>
+        <h1>Talha Laique</h1>
+        <p class="hero__role">Machine Learning Engineer <span class="sep">/</span> Computer Vision</p>
+        <p class="hero__blurb">
+          I build computer vision and document-AI systems that make it all the way to production —
+          from dataset creation and annotation, through training CNNs, YOLO and SAM, to Dockerised
+          inference services with experiment tracking. 5+ years across applied research and industry.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">
+            View projects
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn" href="mailto:talhalaique9@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+            Get in touch
+          </a>
+          <!-- Stable résumé link. To publish a new version: overwrite assets/resume.pdf
+               and bump ?v= here and in the contact section (see README). -->
+          <a class="btn btn--ghost js-resume" href="assets/resume.pdf?v=2026-08" download="Talha-Laique-Resume.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 10.5 12 15l4.5-4.5M4 20h16"/></svg>
+            Résumé
+          </a>
+        </div>
+
+        <ul class="hero__links">
+          <li><a href="https://github.com/laiquet" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            github.com/laiquet</a></li>
+          <li><a href="https://linkedin.com/in/talha-laique" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.8v1.7h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.53 4.78 5.83V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21h-4V9Z"/></svg>
+            in/talha-laique</a></li>
+          <li><a href="tel:+4792918125">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg>
+            +47 929 18125</a></li>
+        </ul>
+      </div>
+
+      <div class="hero__photo">
+        <div class="photo-frame">
+          <img src="assets/talha.jpg" alt="Portrait of Talha Laique" width="880" height="880" />
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ul class="stats" role="list">
+        <li><strong>5+</strong><span>Years in ML &amp; CV</span></li>
+        <li><strong>PhD</strong><span>Computer Vision, NMBU</span></li>
+        <li><strong>11</strong><span>Open-source repos</span></li>
+        <li><strong>EU/NO</strong><span>Work-eligible, no sponsorship</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <p class="kicker">01 — About</p>
+      <h2 class="h2">Owning the pipeline, raw pixels to shipped service</h2>
+
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a Machine Learning / Computer Vision Engineer based in Ås, Norway, currently finishing a
+            PhD at <strong>NMBU</strong> where I build vision pipelines that quantify melanin pigmentation
+            in farmed Atlantic salmon — detection, segmentation and feature extraction turning raw
+            underwater imagery into analysis-ready datasets for a multi-institution welfare study.
+          </p>
+          <p>
+            Before research I worked across three ML teams in Paris: product taxonomy classification at
+            <strong>INIT ML</strong>, document understanding for scanned financial records at
+            <strong>BASIKON</strong>, and ensemble career-pathway models at <strong>GOJOB</strong>.
+            That mix left me equally comfortable with messy annotation work, model architecture, and the
+            unglamorous deployment layer — Docker, Flask/FastAPI, MLflow, rate limiting, monitoring.
+          </p>
+          <p>
+            Lately I've been extending that into GenAI: fine-tuning vision-language models (Qwen3-VL),
+            multi-agent LangGraph swarms, and RAG systems over research literature.
+          </p>
+        </div>
+
+        <ul class="about__facts" role="list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-10.5A7 7 0 0 0 5 10.5C5 15.8 12 21 12 21Z"/><circle cx="12" cy="10.3" r="2.4"/></svg>
+            <div><strong>Based in</strong>Ås, Norway</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 3l8 4.5-8 4.5-8-4.5Z"/><path d="M7 10v4.5c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5V10"/></svg>
+            <div><strong>Education</strong>PhD (NMBU) · MScT Paris-Saclay</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7"/></svg>
+            <div><strong>Focus</strong>Detection · Segmentation · Document AI</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V6M4 18h16"/><path d="M8 15V11M12 15V8M16 15v-2"/></svg>
+            <div><strong>Also</strong>MLOps · LLM / RAG · Agents</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section section--alt">
+    <div class="wrap">
+      <p class="kicker">02 — Experience</p>
+      <h2 class="h2">Where I've built things</h2>
+
+      <ol class="timeline" role="list">
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__date">Jan 2024 — Feb 2026</span>
+            <span class="tl__place">Ås, Norway</span>
+          </div>
+          <div class="tl__body">
+            <h3>Computer Vision Researcher <span class="tl__sub">(PhD Candidate)</span></h3>
+            <p class="tl__org">NMBU — Norwegian University of Life Sciences</p>
+            <ul>
+              <li>Built end-to-end CV pipelines (detection, segmentation, feature extraction) to quantify melanin-based pigmentation in Atlantic salmon, converting raw images into structured, analysis-ready datasets for a multi-institution welfare study.</li>
+              <li>Created and validated annotated image datasets for ROI segmentation and object detection — preprocessing, label QA, and structured export for training.</li>
+              <li>Delivered reproducible batch-inference and CSV-generation workflows enabling per-fish, per-day and per-side temporal analysis, supporting two peer-reviewed publications.</li>
+            </ul>
+            <div class="chips"><span>PyTorch</span><span>YOLO</span><span>SAM</span><span>OpenCV</span><span>Dataset QA</span></div>
+          </div>
+        </li>
+
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__date">May 2021 — Oct 2021</span>
+            <span class="tl__place">Paris, France</span>
+          </div>
+          <div class="tl__body">
+            <h3>Machine Learning Engineer Intern</h3>
+            <p class="tl__org">INIT ML</p>
+            <ul>
+              <li>Built an end-to-end product taxonomy model classifying fashion items into 2 category levels and multiple attributes from images and metadata, deployed via a web app and API demo.</li>
+              <li>Built scraping and preprocessing pipelines generating a custom multi-thousand-image e-commerce training dataset.</li>
+              <li>Quantised and integrated the trained model into an Android app for on-device product image inference.</li>
+            </ul>
+            <div class="chips"><span>TensorFlow</span><span>Multimodal</span><span>Quantisation</span><span>Android</span></div>
+          </div>
+        </li>
+
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__date">Sep 2020 — Mar 2021</span>
+            <span class="tl__place">Paris, France</span>
+          </div>
+          <div class="tl__body">
+            <h3>Data Scientist Intern</h3>
+            <p class="tl__org">GOJOB</p>
+            <ul>
+              <li>Built ensemble and embedding-based models classifying user career pathways into 17 broad and 57 specific job categories from work-history and education data.</li>
+              <li>Engineered pathway features from work experience, education and word embeddings to lift classification accuracy across both taxonomy levels.</li>
+            </ul>
+            <div class="chips"><span>scikit-learn</span><span>Embeddings</span><span>Ensembles</span><span>NLP</span></div>
+          </div>
+        </li>
+
+        <li class="tl">
+          <div class="tl__meta">
+            <span class="tl__date">Apr 2020 — Aug 2020</span>
+            <span class="tl__place">Paris, France</span>
+          </div>
+          <div class="tl__body">
+            <h3>ML Engineer Intern <span class="tl__sub">— Document AI</span></h3>
+            <p class="tl__org">BASIKON</p>
+            <ul>
+              <li>Built a document-understanding pipeline extracting structured fields from scanned financial documents across multiple layouts and scan qualities.</li>
+              <li>Created an in-house annotated dataset of financial document images and prototyped CNN-based field-extraction models.</li>
+            </ul>
+            <div class="chips"><span>OCR</span><span>CNNs</span><span>Annotation</span></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <p class="kicker">03 — Projects</p>
+      <div class="section__head">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip is-active" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="cv" type="button">Computer Vision</button>
+          <button class="chip" data-filter="mlops" type="button">MLOps</button>
+          <button class="chip" data-filter="genai" type="button">GenAI &amp; LLM</button>
+        </div>
+      </div>
+
+      <div class="grid" id="projectGrid">
+
+        <article class="card" data-tags="cv mlops">
+          <div class="card__top">
+            <span class="card__badge">Featured</span>
+            <a class="card__gh" href="https://github.com/laiquet/spots-detector-app" target="_blank" rel="noopener" aria-label="Open spots-detector-app on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>YOLOv8 Spot Detector — MLOps Pipeline</h3>
+          <p>Dockerised Flask API serving a custom YOLOv8 model for fish spot detection, with MLflow tracking for experiment versioning, authentication, rate limiting and a drag-and-drop web UI for real-time bounding-box visualisation.</p>
+          <ul class="metrics" role="list"><li><strong>86.5%</strong> mAP@50</li><li><strong>REST</strong> production API</li></ul>
+          <div class="chips"><span>Python</span><span>Flask</span><span>YOLOv8</span><span>MLflow</span><span>Docker</span><span>Gunicorn</span></div>
+        </article>
+
+        <article class="card" data-tags="cv">
+          <div class="card__top">
+            <span class="card__badge">Featured</span>
+            <a class="card__gh" href="https://github.com/laiquet/yolo-underwater" target="_blank" rel="noopener" aria-label="Open yolo-underwater on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>Salmon YOLO Pipeline — Underwater Detection</h3>
+          <p>A 4-stage CLI pipeline (preprocess → train → infer → crop) unifying underwater image enhancement, YOLO detection and ROI extraction on a 207-image, 1,750-instance dataset. Gray-World white balance, CLAHE and Real-ESRGAN lift image quality before detection.</p>
+          <ul class="metrics" role="list"><li><strong>0.756</strong> mAP@50 (+37%)</li><li><strong>+176%</strong> UCIQE</li></ul>
+          <div class="chips"><span>YOLO26x</span><span>Ultralytics</span><span>OpenCV</span><span>Real-ESRGAN</span><span>CUDA</span></div>
+        </article>
+
+        <article class="card" data-tags="cv">
+          <div class="card__top">
+            <span class="card__badge card__badge--alt">★ 1</span>
+            <a class="card__gh" href="https://github.com/laiquet/multimodal-labeling-tool" target="_blank" rel="noopener" aria-label="Open multimodal-labeling-tool on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>AI-Assisted Annotation Tool</h3>
+          <p>Desktop annotation tool supporting polygons, bounding boxes and OBBs with undo/redo, autosave and crash recovery — plus SAM-prompted and YOLO auto-detection labelling assistance. Import/export across YOLO, COCO, JSON and SAM RLE.</p>
+          <ul class="metrics" role="list"><li><strong>4</strong> label formats</li><li><strong>SAM2/3</strong> + YOLO assist</li></ul>
+          <div class="chips"><span>PySide6</span><span>PyTorch</span><span>SAM</span><span>COCO</span><span>OpenCV</span></div>
+        </article>
+
+        <article class="card" data-tags="genai cv">
+          <div class="card__top">
+            <span class="card__badge card__badge--new">New</span>
+            <a class="card__gh" href="https://github.com/laiquet/vision-language-spots" target="_blank" rel="noopener" aria-label="Open vision-language-spots on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>Vision-Language Spot Summarisation</h3>
+          <p>Fine-tuned Qwen3-VL-4B to generate natural-language summaries of melanin spot patterns directly from Atlantic salmon imagery — bridging the detection pipeline and human-readable welfare reporting.</p>
+          <ul class="metrics" role="list"><li><strong>Qwen3-VL-4B</strong> fine-tune</li><li><strong>VLM</strong> for aquaculture</li></ul>
+          <div class="chips"><span>Hugging Face</span><span>PyTorch</span><span>VLM</span><span>LoRA</span></div>
+        </article>
+
+        <article class="card" data-tags="genai">
+          <div class="card__top">
+            <span class="card__badge">Featured</span>
+            <a class="card__gh" href="https://github.com/laiquet/agents-swarm-paper-analyzer" target="_blank" rel="noopener" aria-label="Open agents-swarm-paper-analyzer on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>Swarm Paper Analyzer</h3>
+          <p>A 6-agent LangGraph swarm (Supervisor + 5 specialists) with a fault-tolerant arXiv ingestion pipeline and a ChromaDB RAG store for semantic retrieval over research literature.</p>
+          <ul class="metrics" role="list"><li><strong>6</strong> coordinated agents</li><li><strong>RAG</strong> over arXiv</li></ul>
+          <div class="chips"><span>LangGraph</span><span>LangChain</span><span>ChromaDB</span><span>Gemini API</span></div>
+        </article>
+
+        <article class="card" data-tags="genai mlops">
+          <div class="card__top">
+            <span class="card__badge card__badge--alt">Full-stack</span>
+            <a class="card__gh" href="https://github.com/laiquet/document-ocr" target="_blank" rel="noopener" aria-label="Open document-ocr on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>AI Document OCR &amp; Table Extraction</h3>
+          <p>Full-stack app using Gemini 2.5 Flash to extract structured tables from multi-page financial PDFs with automatic document classification, plus an editable results interface with inline cell correction and multi-format export.</p>
+          <ul class="metrics" role="list"><li><strong>Multi-page</strong> PDF parsing</li><li><strong>Editable</strong> output grid</li></ul>
+          <div class="chips"><span>Node.js</span><span>Express</span><span>Gemini 2.5</span><span>Multimodal AI</span></div>
+        </article>
+
+        <article class="card" data-tags="cv">
+          <div class="card__top">
+            <span class="card__badge card__badge--alt">Research</span>
+            <a class="card__gh" href="https://github.com/laiquet/halibut-tracking" target="_blank" rel="noopener" aria-label="Open halibut-tracking on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>Halibut Multi-Object Tracking</h3>
+          <p>Tracking every halibut in a tank — multi-object tracking over dense, visually similar subjects with heavy occlusion, producing per-individual trajectories for behavioural analysis.</p>
+          <ul class="metrics" role="list"><li><strong>MOT</strong> under occlusion</li><li><strong>Per-ID</strong> trajectories</li></ul>
+          <div class="chips"><span>Python</span><span>Tracking</span><span>OpenCV</span></div>
+        </article>
+
+        <article class="card" data-tags="cv">
+          <div class="card__top">
+            <span class="card__badge card__badge--alt">Research</span>
+            <a class="card__gh" href="https://github.com/laiquet/YOLOv11-Segmentation" target="_blank" rel="noopener" aria-label="Open YOLOv11-Segmentation on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>YOLOv11 Instance Segmentation</h3>
+          <p>Instance segmentation pipeline for Atlantic salmon spot analysis — the segmentation backbone behind the pigmentation quantification study, from mask training through per-region measurement export.</p>
+          <ul class="metrics" role="list"><li><strong>Instance</strong> segmentation</li><li><strong>CSV</strong> measurement export</li></ul>
+          <div class="chips"><span>YOLOv11</span><span>Ultralytics</span><span>PyTorch</span></div>
+        </article>
+
+        <article class="card" data-tags="cv mlops">
+          <div class="card__top">
+            <span class="card__badge card__badge--alt">Open source</span>
+            <a class="card__gh" href="https://github.com/laiquet/idtrackerai-enhanced" target="_blank" rel="noopener" aria-label="Open idtrackerai-enhanced on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            </a>
+          </div>
+          <h3>idtracker.ai Enhanced</h3>
+          <p>Extends idtracker.ai's segmentation stage with modern deep-learning backends, replacing classical thresholding to keep identities stable in harder, lower-contrast footage.</p>
+          <ul class="metrics" role="list"><li><strong>DL</strong> segmentation backend</li><li><strong>Drop-in</strong> upgrade</li></ul>
+          <div class="chips"><span>Python</span><span>PyTorch</span><span>Segmentation</span></div>
+        </article>
+
+      </div>
+
+      <div class="more">
+        <a class="btn btn--ghost" href="https://github.com/laiquet?tab=repositories" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+          See all repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" class="section section--alt">
+    <div class="wrap">
+      <p class="kicker">04 — Publications</p>
+      <h2 class="h2">Peer-reviewed research</h2>
+
+      <ol class="pubs" role="list">
+        <li class="pub">
+          <span class="pub__year">2026</span>
+          <div>
+            <h3><strong>Laique, T.</strong>, Gunnes, M., Folkedal, O., Nilsson, J., Green, E. A. L., Gundersen, H. N., Øverli, Ø., &amp; Ullah, H.</h3>
+            <p class="pub__title">Quantification of Opercular Pigmentation Changes in Farmed Atlantic Salmon</p>
+            <p class="pub__venue">Fishes, 11(5), 271 · <span class="pub__tag">First author</span></p>
+            <a class="pub__link" href="https://scholar.google.com/scholar?q=Quantification+of+Opercular+Pigmentation+Changes+in+Farmed+Atlantic+Salmon" target="_blank" rel="noopener">Find on Google Scholar →</a>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub__year">2025</span>
+          <div>
+            <h3>Lewis, R., Kostermans, T., Brovold, J. W., <strong>Laique, T.</strong>, &amp; Ocepek, M.</h3>
+            <p class="pub__title">Automated Body Condition Scoring in Dairy Cows Using 2D Imaging and Deep Learning</p>
+            <p class="pub__venue">AgriEngineering, 7(7), 241</p>
+            <a class="pub__link" href="https://scholar.google.com/scholar?q=Automated+Body+Condition+Scoring+in+Dairy+Cows+Using+2D+Imaging+and+Deep+Learning" target="_blank" rel="noopener">Find on Google Scholar →</a>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub__year">2022</span>
+          <div>
+            <h3>Ijaz, A. Z., Ali, R. H., Ali, N., <strong>Laique, T.</strong>, &amp; Khan, T. A.</h3>
+            <p class="pub__title">Solving Graph Coloring Problem via Graph Neural Network (GNN)</p>
+            <p class="pub__venue">ICET 2022, pp. 178–183</p>
+            <a class="pub__link" href="https://scholar.google.com/scholar?q=Solving+Graph+Coloring+Problem+via+Graph+Neural+Network+GNN" target="_blank" rel="noopener">Find on Google Scholar →</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS + EDUCATION ============ -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <p class="kicker">05 — Toolkit</p>
+      <h2 class="h2">Skills &amp; education</h2>
+
+      <div class="split">
+        <div class="skills">
+          <div class="skillset">
+            <h3><span class="sq"></span>Languages &amp; core</h3>
+            <div class="chips chips--lg"><span>Python</span><span>SQL</span><span>NumPy</span><span>pandas</span><span>Matplotlib</span><span>JavaScript</span></div>
+          </div>
+          <div class="skillset">
+            <h3><span class="sq"></span>Machine &amp; deep learning</h3>
+            <div class="chips chips--lg"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>CNNs</span><span>YOLO v8/v11/v26</span><span>SAM</span><span>Ensemble learning</span><span>Model evaluation</span></div>
+          </div>
+          <div class="skillset">
+            <h3><span class="sq"></span>Computer vision &amp; document AI</h3>
+            <div class="chips chips--lg"><span>Image classification</span><span>Object detection</span><span>Instance segmentation</span><span>Annotation</span><span>OCR</span><span>Document understanding</span></div>
+          </div>
+          <div class="skillset">
+            <h3><span class="sq"></span>MLOps &amp; deployment</h3>
+            <div class="chips chips--lg"><span>Docker</span><span>MLflow</span><span>FastAPI</span><span>Flask</span><span>Gunicorn</span><span>REST APIs</span><span>Git</span><span>Linux</span><span>GCP</span><span>Azure</span></div>
+          </div>
+          <div class="skillset">
+            <h3><span class="sq"></span>LLM &amp; GenAI</h3>
+            <div class="chips chips--lg"><span>Hugging Face</span><span>Gemini API</span><span>LangChain</span><span>LangGraph</span><span>ChromaDB</span><span>Ollama</span><span>RAG</span></div>
+          </div>
+        </div>
+
+        <div class="edu">
+          <article class="edu__item">
+            <h3>PhD — Computer Vision for Atlantic Salmon Welfare</h3>
+            <p class="edu__org">NMBU · Ås, Norway</p>
+            <p class="edu__meta">Jan 2024 — Present</p>
+            <p class="edu__course">Computer Vision · Image Analysis · Animal Stress Biology</p>
+          </article>
+          <article class="edu__item">
+            <h3>MScT — Artificial Intelligence &amp; Advanced Visual Computing</h3>
+            <p class="edu__org">Université Paris-Saclay · France</p>
+            <p class="edu__meta">Sept 2021 · GPA 3.67 / 4.0</p>
+            <p class="edu__course">Computer Vision · Deep Learning · Machine Learning · NLP · RL</p>
+          </article>
+          <article class="edu__item">
+            <h3>BSc — Computer Engineering</h3>
+            <p class="edu__org">GIK Institute · Topi, Pakistan</p>
+            <p class="edu__meta">June 2015 · GPA 3.22 / 4.0</p>
+            <p class="edu__course">Data Mining · Databases · DSA · Digital Image Processing</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section--contact">
+    <div class="wrap">
+      <div class="cta">
+        <p class="kicker">06 — Contact</p>
+        <h2 class="h2">Let's build something that ships</h2>
+        <p class="cta__text">
+          I'm open to Machine Learning / Computer Vision roles in Norway and remote-friendly teams.
+          Already eligible to work in Norway — no sponsorship required.
+        </p>
+        <div class="cta__row">
+          <a class="btn btn--primary" href="mailto:talhalaique9@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+            talhalaique9@gmail.com
+          </a>
+          <a class="btn" href="https://linkedin.com/in/talha-laique" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.8v1.7h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.53 4.78 5.83V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21h-4V9Z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="https://github.com/laiquet" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.11 2.99.85.09-.66.36-1.11.65-1.37-2.27-.26-4.66-1.14-4.66-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.72 0 0 .86-.28 2.82 1.05a9.7 9.7 0 0 1 5.14 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.42.21 2.46.1 2.72.66.72 1.06 1.63 1.06 2.75 0 3.93-2.4 4.8-4.68 5.05.37.32.7.94.7 1.9v2.82c0 .27.19.6.71.49A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <div class="resume-box js-resume">
+          <div class="resume-box__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+          </div>
+          <div class="resume-box__text">
+            <strong>Download my résumé</strong>
+            <span>PDF · last updated <time datetime="2026-08">August 2026</time></span>
+          </div>
+          <a class="btn btn--primary" href="assets/resume.pdf?v=2026-08" download="Talha-Laique-Resume.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 10.5 12 15l4.5-4.5M4 20h16"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span id="year">2026</span> Talha Laique · Ås, Norway</p>
+    <p class="footer__built">Built with plain HTML, CSS &amp; JavaScript. Hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
