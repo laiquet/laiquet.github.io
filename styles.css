@@ -81,6 +81,8 @@ svg.fill { fill: currentColor; stroke: none; }
   color: var(--accent);
   margin-bottom: 14px;
 }
+/* when a kicker stands alone with no h2 under it, it needs the h2's breathing room */
+.kicker--solo { margin-bottom: 32px; }
 .h2 {
   font-size: clamp(1.7rem, 3.6vw, 2.5rem);
   line-height: 1.15;
